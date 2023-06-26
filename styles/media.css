@@ -1,0 +1,80 @@
+
+ /**********block Media**********/
+ @media screen and (min-width: 319px) and (max-width: 520px) {
+
+    .content {
+      width: calc(5rem + 20vw);
+    }
+
+    .imageHome{
+      overflow: hidden;
+    }
+
+    .article{
+      display:none;
+      z-index: -10000;
+    }
+
+    .h2Contact{
+      width: 200px;
+    }
+
+    .articleFormulaire{
+      margin-left: 0;
+      height: 540px;
+
+    }
+
+    /********* Portfolio *********/
+    .pPortfolio{
+      margin-top: 10%;
+      text-align: center;
+   }
+    /*********Footer*********/
+
+    .footerLi{
+      list-style: none;
+      display: none;
+    }
+
+    .imgFooter{
+      padding: 10px;
+      width:20px ;
+      height:20px ;
+    }
+    .aFooterMail .aFooterTel{
+      font-size:10px;
+    }
+
+    .pFooter2{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1020px) and (max-width: 1112px) {
+
+    .content {
+      width: calc(4rem + 5vw);
+    }
+
+    .contentContact{
+      width: calc(1rem + 65rem);
+    }
+
+    .articleFormulaire{
+      margin-left: 2rem;
+    }
+   }
+  @media screen and (min-width: 1110px) and (max-width: 1360px) {
+
+    .content{
+      width: calc(4rem + 20vw);
+    }
+
+    .articleFormulaire{
+      margin-left: 2rem;
+    }
+  }
+  @media screen and (min-width: 1366 px) and (max-width: 4390px){
+
+
+  }

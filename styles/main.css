@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+/***********général************/
+*{
+  font-family: 'DM Serif Display', serif;
+}
+
+body, html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: table;
+  width: 100%;
+  background-color: #201929;
+  color: aliceblue;
+}
+
+h2{
+  margin-left: 2rem;
+}
+
+h4{
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+/***********header***********/
+
+.hHeader{
+  text-decoration: none;
+  padding-left: 2rem;
+  font-size: 24px;
+}
+
+.header{
+  padding-top: 5.5rem;
+  height: 100%;
+
+}
+
+.img{
+  display: flex;
+  float: left;
+  margin-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/***********nav/menu***********/
+/***********side navigation menu***********/
+
+.sidenav{
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color:aliceblue;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  background-color: black;
+}
+
+/***********liens du menu***********/
+
+.sidenav a, .pMenu{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: medium;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/***********survol liens***********/
+
+.sidenav a:hover{
+  color: #E13636;
+}
+
+i{
+  padding-right: 1rem;
+}
+
+/***********CSS des pages home/à propos/portfolio***********/
+/***********Mise en page home***********/
+.content{
+  display: flex;
+  height: 100%;
+}
+
+.h1Content{
+  font-size: 64px;
+  text-align: center;
+}
+
+.h2Content{
+  font-size: 40px;
+  text-align: end;
+}
+
+.homeContent{
+  margin-left: 10%;
+  width: 500px;
+}
+
+.imageHome{
+  justify-content: space-around;
+  margin-left: 10rem;
+  margin-bottom: 9rem;
+}
+
+
+/***********Mise en page contact***********/
+
+.contentContact{
+  display: block;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.h2contact{
+    padding-bottom: 5rem;
+}
+
+.pContact{
+  padding-top: 3rem;
+  padding-left: 5rem;
+  font-size: 24px;
+}
+
+.article .articleFormulaire{
+  position: absolute;
+}
+
+.article, .articleFormulaire{
+  border: 1px solid #E13636;
+  border-radius: 20px;
+}
+
+.article{
+  text-align: center;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 10rem;
+  float: right;
+  margin-right: 5rem;
+}
+
+.articleFormulaire{
+  float: left;
+  margin-left: 10rem;
+
+}
+
+form{
+  text-align: center;
+  margin-bottom: 10rem;
+}
+#projet{
+  width: 200px;
+}
+.valide{
+  margin-top: 2rem;
+}
+
+#nom, #prenom, #projet, #mail, #submit{
+  margin-bottom: 1rem;
+  width: 30em;
+  border: 1px solid #E13636;
+  background-color: #201929;
+  color: aliceblue;
+  border-radius: 10px;
+  height: 25px;
+}
+#nom{
+  margin-top: 5rem;
+}
+
+#projet{
+  height: 7em;
+}
+
+#button{
+  margin-top: 0.5rem;
+  width: 20em;
+}
+
+#button:hover{
+  color: #E13636;
+}
+
+label a{
+  color: #3253FF;
+}
+
+label a:hover{
+  color: #E13636;
+}
+
+/***********Mise en page Portfolio***********/
+
+.pPortfolio{
+  margin-top: 10rem ;
+  text-align: center;
+
+}
+
+.loading{
+  background-color: black;
+  height: 30px;
+  width: 50%;
+  overflow: hidden;
+  margin-left: 25%;
+  margin-bottom: 10rem;
+}
+
+.eye{
+  background-color: #E13636;
+  background-image:         linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+  color: white;
+  height: 100%;
+  width: 10%;
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+  animation:  2s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye{
+  from {
+    margin-left: -10%;
+  }to{
+    margin-left: 100%;
+  }
+}
+
+  @keyframes move_eye{ 
+    from {
+      margin-left: -10%;
+    }to{
+      margin-left: 100%;
+  }
+}
+/***********Mise en page Mail***********/
+.pMail{
+  text-align: center;
+}
+.button{
+  margin-left: 48%;
+
+}
+
+/*********** Article général ***********/
+
+/***********footer***********/
+
+footer{
+  display: table-row;
+  height: 150px;
+  margin-bottom:0;
+  width: 100%;
+  text-align: center;
+}
+
+.footerP{
+ text-align: center;
+ font-size: small;
+}
+
+.aFooterTel, .aFooterMail{
+  font-weight: 600;
+  text-decoration: none;
+  color: #3253FF;
+}
+
+.aFooterTel:hover, .aFooterMail:hover{
+  color: #E13636;
+}
+
+.imgFooter{
+  text-align: center;
+  padding:0 5rem;
+}
+
+#mailFooter{
+  padding-left: 20px;
+}
+
+.pFooter2 a{
+  color: #3253FF;
+}
+
+.pFooter2 a:hover{
+  color: #E13636;
+}
+
+
+
+
+
+

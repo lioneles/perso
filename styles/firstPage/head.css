@@ -1,0 +1,53 @@
+/*css header*/
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #201929;
+}
+.btn{
+    text-decoration: none;
+    padding: 15px 50px;
+    background-color: #030201;
+    color: #3253FF;
+    border-radius: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle closest-side, #E13636, transparent);
+    width: 0;
+    height: 0;
+    transition: width 0.3s ease, height 0.3s ease ;
+    z-index: -1;
+}
+.btn:hover::before{
+    width: 250px;
+    height: 250px;
+}
+
+.pName{
+    text-align: center;
+   margin: 2px 35px;
+}
+@media screen and (max-width: 330px) {
+   p{
+       font-size: small;
+   }
+   .btn{
+       padding: 10px 25px;
+   }
+  }
+
